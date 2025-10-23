@@ -168,7 +168,7 @@ const NewFinanceDashboard: React.FC<NewFinanceDashboardProps> = ({ profile, onUp
           <div className="text-2xl font-bold text-finance-green-primary mb-1">
             {expenses.length}
           </div>
-          <div className="text-sm text-finance-green-secondary">Today's Transactions</div>
+          <div className="text-sm text-finance-green-secondary">Today&apos;s Transactions</div>
         </div>
 
         <div className="finance-stat-card animate-slideInUp" style={{animationDelay: '0.1s'}}>
@@ -202,7 +202,7 @@ const NewFinanceDashboard: React.FC<NewFinanceDashboardProps> = ({ profile, onUp
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-semibold text-finance-green-primary flex items-center">
               <Calendar className="h-5 w-5 mr-2" />
-              Today's Expenses
+              Today&apos;s Expenses
             </h2>
             <Link href="/diary" className="text-finance-gold-primary hover:text-finance-gold-secondary transition-colors">
               View All

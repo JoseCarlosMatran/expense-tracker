@@ -108,7 +108,7 @@ const CurrencySelector: React.FC<CurrencySelectorProps> = ({
               
               {filteredCurrencies.length === 0 && searchTerm && (
                 <div className="px-4 py-8 text-center text-slate-500">
-                  No currencies found matching "{searchTerm}"
+                  No currencies found matching &quot;{searchTerm}&quot;
                 </div>
               )}
             </div>

@@ -68,7 +68,7 @@ const DailyDashboard: React.FC<DailyDashboardProps> = ({ profile, onUpdateProfil
   if (isLoading) {
     return (
       <div className="flex justify-center items-center h-64">
-        <div className="text-slate-500">Loading today's progress...</div>
+        <div className="text-slate-500">Loading today&apos;s progress...</div>
       </div>
     );
   }

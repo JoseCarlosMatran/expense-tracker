@@ -82,7 +82,7 @@ const WelcomeAnimation: React.FC<WelcomeAnimationProps> = ({ onComplete, userNam
             <div
               key={index}
               className={`step-content ${currentStep === index ? 'active' : currentStep > index ? 'completed' : ''}`}
-              style={{ '--step-color': step.color } as any}
+              style={{ '--step-color': step.color } as React.CSSProperties}
             >
               <div className="icon-wrapper">
                 <div className="icon-glow"></div>

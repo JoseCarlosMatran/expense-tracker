@@ -416,7 +416,7 @@ interface NotificationsStepProps {
   dailyReminderTime: string;
   enableLimitWarnings: boolean;
   enableAchievements: boolean;
-  onChange: (field: string, value: any) => void;
+  onChange: (field: string, value: boolean | string) => void;
   onNext: () => void;
   onBack: () => void;
 }

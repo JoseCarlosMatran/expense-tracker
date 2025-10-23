@@ -9,6 +9,7 @@ export interface Language {
 }
 
 export interface TranslationKeys {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 }
 

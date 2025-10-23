@@ -125,6 +125,7 @@ export interface PushNotification {
   body: string;
   icon?: string;
   badge?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data?: any;
   scheduledFor: string;
   sent: boolean;

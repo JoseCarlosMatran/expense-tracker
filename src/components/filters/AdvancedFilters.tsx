@@ -76,7 +76,7 @@ const AdvancedFilters: React.FC<AdvancedFiltersProps> = ({
   };
 
   const applyFilters = () => {
-    let filteredExpenses = expenses.filter(expense => {
+    const filteredExpenses = expenses.filter(expense => {
       // Search filter
       if (filters.search) {
         const searchTerm = filters.search.toLowerCase();
@@ -122,8 +122,8 @@ const AdvancedFilters: React.FC<AdvancedFiltersProps> = ({
 
     // Apply sorting
     filteredExpenses.sort((a, b) => {
-      let aValue: any;
-      let bValue: any;
+      let aValue: number | Date | string;
+      let bValue: number | Date | string;
 
       switch (filters.sortBy) {
         case 'date':
@@ -348,7 +348,7 @@ const AdvancedFilters: React.FC<AdvancedFiltersProps> = ({
             <div className="flex flex-wrap gap-4">
               <Select
                 value={filters.sortBy}
-                onChange={(value) => setFilters(prev => ({...prev, sortBy: value as any}))}
+                onChange={(value) => setFilters(prev => ({...prev, sortBy: value as 'date' | 'amount' | 'category' | 'description'}))}
                 label="Sort By"
                 variant="floating"
                 size="sm"
@@ -362,7 +362,7 @@ const AdvancedFilters: React.FC<AdvancedFiltersProps> = ({
               
               <Select
                 value={filters.sortOrder}
-                onChange={(value) => setFilters(prev => ({...prev, sortOrder: value as any}))}
+                onChange={(value) => setFilters(prev => ({...prev, sortOrder: value as 'asc' | 'desc'}))}
                 label="Order"
                 variant="floating"
                 size="sm"

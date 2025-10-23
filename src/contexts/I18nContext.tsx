@@ -56,6 +56,7 @@ export const I18nProvider: React.FC<I18nProviderProps> = ({ children }) => {
 
   const t: TranslationFunction = (key, params) => {
     const keys = key.split('.');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let value: any = translations;
     
     for (const k of keys) {
