@@ -17,10 +17,10 @@ export default function Home() {
   useEffect(() => {
     const userProfile = dailyTrackerService.getUserProfile();
     const hasSeenWelcome = localStorage.getItem('hasSeenWelcome');
-    
+
     setProfile(userProfile);
     setShowOnboarding(!userProfile);
-    setShowWelcome(userProfile && !hasSeenWelcome);
+    setShowWelcome(Boolean(userProfile && !hasSeenWelcome));
     setIsLoading(false);
   }, []);
 
