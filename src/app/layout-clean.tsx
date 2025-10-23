@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ArkmLayout from "@/components/layout/ArkmLayout";
+import SimpleFullWidthLayout from "@/components/layout/SimpleFullWidthLayout";
 import { CurrencyProvider } from "@/contexts/CurrencyContext";
 import { I18nProvider } from "@/contexts/I18nContext";
-import { ThemeProvider } from "@/contexts/ThemeContext";
-import EnhancedThemeProvider from "@/components/themes/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,15 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className} suppressHydrationWarning>
-        <EnhancedThemeProvider>
-          <ThemeProvider>
-            <I18nProvider>
-              <CurrencyProvider>
-                <ArkmLayout>{children}</ArkmLayout>
-              </CurrencyProvider>
-            </I18nProvider>
-          </ThemeProvider>
-        </EnhancedThemeProvider>
+        <I18nProvider>
+          <CurrencyProvider>
+            <SimpleFullWidthLayout>{children}</SimpleFullWidthLayout>
+          </CurrencyProvider>
+        </I18nProvider>
       </body>
     </html>
   );

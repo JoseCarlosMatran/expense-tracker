@@ -1,0 +1,161 @@
+/* Arkm.com Inspired Color System */
+:root {
+  /* Primary Colors - Based on arkm.com */
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
+  
+  /* Secondary Colors - Slate theme */
+  --color-secondary-50: #f8fafc;
+  --color-secondary-100: #f1f5f9;
+  --color-secondary-200: #e2e8f0;
+  --color-secondary-300: #cbd5e1;
+  --color-secondary-400: #94a3b8;
+  --color-secondary-500: #64748b;
+  --color-secondary-600: #475569;
+  --color-secondary-700: #334155;
+  --color-secondary-800: #1e293b;
+  --color-secondary-900: #0f172a;
+  
+  /* Accent Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+  
+  /* Glass Effect Colors */
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  
+  /* Dark Theme Overrides */
+  --dark-bg-primary: #0f172a;
+  --dark-bg-secondary: #1e293b;
+  --dark-bg-tertiary: #334155;
+  --dark-text-primary: #f8fafc;
+  --dark-text-secondary: #cbd5e1;
+  
+  /* Typography */
+  --font-primary: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+  
+  /* Modern Theme Variables */
+  --accent-primary: var(--color-primary-600);
+  --accent-secondary: var(--color-primary-500);
+  --accent-success: var(--color-success);
+  --accent-warning: var(--color-warning);
+  --accent-danger: var(--color-error);
+  
+  --text-primary: var(--color-secondary-900);
+  --text-secondary: var(--color-secondary-600);
+  --text-muted: var(--color-secondary-400);
+  
+  --bg-primary: #ffffff;
+  --bg-secondary: var(--color-secondary-50);
+  --bg-tertiary: var(--color-secondary-100);
+  
+  --border-primary: var(--color-secondary-200);
+  --border-secondary: var(--color-secondary-300);
+  
+  /* Shadows and Effects */
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary-600), var(--color-primary-500));
+  --gradient-secondary: linear-gradient(135deg, var(--color-secondary-600), var(--color-secondary-500));
+  --gradient-bg: linear-gradient(135deg, var(--color-primary-50), var(--color-secondary-50));
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --accent-primary: var(--color-primary-400);
+  --accent-secondary: var(--color-primary-300);
+  
+  --text-primary: var(--dark-text-primary);
+  --text-secondary: var(--dark-text-secondary);
+  --text-muted: var(--color-secondary-500);
+  
+  --bg-primary: var(--dark-bg-primary);
+  --bg-secondary: var(--dark-bg-secondary);
+  --bg-tertiary: var(--dark-bg-tertiary);
+  
+  --border-primary: var(--color-secondary-700);
+  --border-secondary: var(--color-secondary-600);
+  
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  
+  --gradient-bg: linear-gradient(135deg, var(--dark-bg-primary), var(--dark-bg-secondary));
+}
+
+/* Blue Professional Theme */
+[data-theme="blue"] {
+  --accent-primary: #1e40af;
+  --accent-secondary: #3b82f6;
+  --accent-success: #059669;
+  --accent-warning: #d97706;
+  --accent-danger: #dc2626;
+  
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-tertiary: #e2e8f0;
+  
+  --gradient-primary: linear-gradient(135deg, #1e40af, #3b82f6);
+  --gradient-bg: linear-gradient(135deg, #dbeafe, #f0f9ff);
+}
+
+/* Remove old MFP classes */
+.arkm-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.arkm-btn {
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  cursor: pointer;
+}
+
+.arkm-btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+.arkm-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.arkm-stat-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.arkm-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
