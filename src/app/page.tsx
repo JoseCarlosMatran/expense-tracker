@@ -63,9 +63,8 @@ export default function Home() {
 
   if (showWelcome && profile) {
     return (
-      <WelcomeAnimation 
+      <WelcomeAnimation
         onComplete={handleWelcomeComplete}
-        userName={profile.name}
       />
     );
   }
