@@ -268,7 +268,7 @@ const SettingsPage: React.FC = () => {
             <label className="block text-sm font-medium text-gray-700 mb-2">{t('settings.language.label')}</label>
             <Select
               value={tempLanguage}
-              onChange={setTempLanguage}
+              onChange={(value) => setTempLanguage(value as 'en' | 'es')}
               label={t('settings.language.label')}
               placeholder="Select language"
               variant="floating"
