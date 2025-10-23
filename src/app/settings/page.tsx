@@ -197,16 +197,17 @@ const SettingsPage: React.FC = () => {
     {
       icon: User,
       title: t('settings.profile.title'),
-      subtitle: profile?.name || t('settings.profile.setupPrompt'),
+      subtitle: profile ? `${t('settings.profile.monthlyIncome')}: ${profile.monthlyIncome}` : t('settings.profile.setupPrompt'),
       action: handleUpdateProfile,
       isEditing: editingProfile,
       editContent: editingProfile && (
         <div className="p-4 bg-gray-50 rounded-lg space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">{t('settings.profile.name')}</label>
+            <label className="block text-sm font-medium text-gray-700 mb-2">{t('settings.profile.monthlyIncome')}</label>
             <Input
-              value={tempProfile?.name || ''}
-              onChange={(e) => setTempProfile(prev => prev ? {...prev, name: e.target.value} : null)}
+              type="number"
+              value={tempProfile?.monthlyIncome || ''}
+              onChange={(e) => setTempProfile(prev => prev ? {...prev, monthlyIncome: Number(e.target.value)} : null)}
               label={t('settings.profile.name')}
               placeholder="Enter your name"
               variant="floating"
