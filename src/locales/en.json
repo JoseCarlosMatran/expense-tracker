@@ -1,322 +1,177 @@
 {
-  "common": {
-    "save": "Save",
-    "cancel": "Cancel",
-    "edit": "Edit",
-    "delete": "Delete",
-    "add": "Add",
-    "loading": "Loading",
-    "error": "Error",
-    "success": "Success",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "reset": "Reset",
-    "export": "Export",
-    "import": "Import"
+  "app": {
+    "name": "GlobalGoods Up",
+    "shortDescription": "We automate your web presence with generative AI in record time.",
+    "metaDescription": "GlobalGoods Up builds automations, chatbots and digital experiences powered by generative AI so your company scales productivity worldwide.",
+    "cta": "Book a demo",
+    "ctaSecondary": "Explore services"
   },
   "navigation": {
     "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "about": "About",
+    "blog": "Blog",
     "dashboard": "Dashboard",
-    "expenses": "Expenses",
-    "transactions": "Transactions",
-    "analytics": "Analytics",
-    "progress": "Progress",
-    "settings": "Settings",
-    "diary": "Diary",
-    "categories": "Categories",
-    "addExpense": "Add Expense",
-    "menu": "Menu"
+    "admin": "Admin",
+    "contact": "Contact",
+    "login": "Log in",
+    "getStarted": "Get started"
+  },
+  "hero": {
+    "title": "We automate your web in record time with generative AI",
+    "subtitle": "Launch automations, chatbots and intelligent analytics on top of a secure SaaS platform ready for global operations.",
+    "primaryCta": "Request demo",
+    "secondaryCta": "View plans",
+    "trustedBy": "Teams across LATAM, the US and Europe rely on GlobalGoods Up"
+  },
+  "metrics": {
+    "automation": "Automated processes",
+    "roi": "Average ROI",
+    "timeSaved": "Hours saved",
+    "satisfaction": "Customer satisfaction"
+  },
+  "services": {
+    "title": "Generative AI services",
+    "subtitle": "A complete stack to accelerate every business unit.",
+    "items": {
+      "automation": {
+        "title": "AI automations",
+        "description": "We design intelligent flows with 360° integrations for your enterprise apps."
+      },
+      "web": {
+        "title": "AI-built websites",
+        "description": "Launch multilingual, SEO-ready websites in days, not months."
+      },
+      "chatbots": {
+        "title": "Custom chatbots",
+        "description": "Serve customers 24/7 with agents that understand your tone and catalog."
+      },
+      "analytics": {
+        "title": "Data analytics",
+        "description": "Connect your sources and get auto-generated actionable dashboards."
+      },
+      "accounting": {
+        "title": "AI-powered accounting",
+        "description": "Automate reconciliations, reporting and invoicing with audit-ready accuracy."
+      },
+      "software": {
+        "title": "Generative software",
+        "description": "Prototype and build bespoke SaaS apps powered by generative models."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Plans built to scale",
+    "subtitle": "Monthly or annual billing. Cancel anytime.",
+    "cta": "Buy now",
+    "plans": {
+      "starter": {
+        "name": "Launch",
+        "price": "$499",
+        "period": "/month",
+        "description": "Essential automations to validate your operations.",
+        "features": [
+          "Core automation workflows",
+          "Two-language landing site",
+          "Knowledge-base chatbot",
+          "Email support 8x5"
+        ]
+      },
+      "growth": {
+        "name": "Scale",
+        "price": "$1,499",
+        "period": "/month",
+        "description": "Optimize operations with advanced AI and analytics.",
+        "features": [
+          "Unlimited multi-platform flows",
+          "Generative analytics dashboards",
+          "Chatbot with Google Calendar booking",
+          "CRM and ERP integration"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Contact",
+        "period": "",
+        "description": "Enterprise governance, compliance and total customization.",
+        "features": [
+          "Dedicated AI and data squads",
+          "Multi-cloud deployments",
+          "24/7 support with custom SLAs",
+          "Private data fine-tuning"
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "Empowering global companies with responsible AI",
+    "mission": "Our mission is to democratize intelligent automation so any organization can compete globally.",
+    "values": [
+      "Ethics and security in every deployed model",
+      "Implementations in weeks, not months",
+      "Hybrid teams across business, data and UX"
+    ],
+    "teamTitle": "Founding team",
+    "team": [
+      {
+        "name": "Ana Velasco",
+        "role": "CEO & Strategy",
+        "bio": "10 years leading digital transformation and automation in retail and fintech."
+      },
+      {
+        "name": "Julián Méndez",
+        "role": "CTO & Generative AI",
+        "bio": "Expert in deploying generative models and serverless architectures."
+      },
+      {
+        "name": "Sofía Ríos",
+        "role": "COO & Data",
+        "bio": "Former advanced analytics consultant for global logistics chains."
+      }
+    ]
+  },
+  "blog": {
+    "title": "AI-generated insights",
+    "subtitle": "Every week we publish practical ideas on applying generative AI to business.",
+    "cta": "Read article",
+    "empty": "No generated articles yet. Check back soon."
+  },
+  "contact": {
+    "title": "Let’s automate your business",
+    "subtitle": "Book a free 30-minute consultation with our team.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "message": "How can we help?",
+      "submit": "Send message",
+      "success": "Thank you! We’ll get in touch within 24 hours.",
+      "error": "Message could not be sent. Please try again."
+    },
+    "chatbot": {
+      "title": "AI assistant",
+      "description": "Our bot can coordinate a calendar meeting in seconds.",
+      "placeholder": "Ask anything...",
+      "send": "Send"
+    }
   },
   "dashboard": {
-    "welcome": "Welcome Back!",
-    "budgetUsed": "Budget Used",
-    "dailyBudget": "Daily Budget",
-    "spentToday": "Spent Today",
-    "remaining": "Remaining Today",
-    "overBudget": "Over Budget",
-    "todaysTransactions": "Today's Transactions",
-    "avgTransaction": "Avg Transaction",
-    "budgetProgress": "Budget Progress",
-    "totalToday": "Total Today",
-    "addNewExpense": "Add New Expense",
-    "viewProgress": "View Progress"
+    "title": "Your GlobalGoods Up dashboard",
+    "subtitle": "Review active services, invoices and conversations with our team.",
+    "services": "Purchased services",
+    "invoices": "Invoices",
+    "messages": "Messages",
+    "tickets": "Tickets",
+    "assistant": "Personalized chatbot"
   },
-  "expenses": {
-    "allTransactions": "All Transactions",
-    "viewEditManage": "View, edit and manage all your expense transactions",
-    "noExpenses": "No expenses found",
-    "getStarted": "Get started by adding your first expense.",
-    "adjustFilters": "Try adjusting your filters to see more results.",
-    "addFirstExpense": "Add Your First Expense",
-    "showing": "Showing",
-    "of": "of",
-    "expenses": "expenses",
-    "total": "Total",
-    "exportCSV": "Export CSV",
-    "description": "Description",
-    "category": "Category",
-    "amount": "Amount",
-    "date": "Date"
-  },
-  "expenseForm": {
-    "addNewExpense": "Add New Expense",
-    "editExpense": "Edit Expense",
-    "searchExpenses": "Search expenses, categories...",
-    "commonExpenses": "Common Expenses",
-    "suggested": "suggested",
-    "enterDescription": "Enter expense description...",
-    "selectCategory": "Select Category",
-    "validation": {
-      "dateRequired": "Date is required",
-      "amountRequired": "Amount is required",
-      "amountPositive": "Amount must be a positive number",
-      "categoryRequired": "Category is required",
-      "descriptionRequired": "Description is required",
-      "descriptionMinLength": "Description must be at least 3 characters"
-    }
-  },
-  "analytics": {
-    "title": "AI-Powered Analytics",
-    "subtitle": "Advanced spending analysis with intelligent insights and financial intelligence",
-    "noDataTitle": "No Analytics Data Available",
-    "noDataSubtitle": "Add at least 5 expenses to unlock powerful AI-driven financial insights and analytics.",
-    "startAddingExpenses": "Start Adding Expenses",
-    "aiAnalysisActive": "AI Analysis Active",
-    "aiFinancialIntelligence": "AI Financial Intelligence",
-    "advancedAnalytics": "Advanced analytics powered by intelligent algorithms",
-    "aiAnalysisRequires": "AI Analysis Requires More Data",
-    "needMoreData": "Add at least 5 expenses to unlock intelligent financial insights and recommendations.",
-    "totalExpenses": "Total Expenses",
-    "transactions": "transactions",
-    "monthlySpending": "Monthly Spending",
-    "currentMonth": "Current month",
-    "averagePerExpense": "Average per Expense",
-    "acrossAllExpenses": "Across all expenses",
-    "healthScore": "Health Score",
-    "aiAssessment": "AI Assessment",
-    "categoryBreakdown": "Category Breakdown",
-    "ofTotal": "of total"
-  },
-  "settings": {
-    "title": "Settings & More",
-    "subtitle": "Manage your profile, preferences and app settings",
-    "currentSettings": "Current Settings",
-    "profile": {
-      "title": "Profile",
-      "setupPrompt": "Set up your profile",
-      "name": "Name",
-      "dailyBudget": "Daily Budget",
-      "member": "FinanceTracker Member"
-    },
-    "budget": {
-      "title": "Daily Budget",
-      "setupPrompt": "Set your budget",
-      "dailyLimit": "Daily Budget Limit"
-    },
-    "language": {
-      "title": "Language & Region",
-      "label": "Language"
-    },
-    "theme": {
-      "title": "Theme",
-      "colorTheme": "Color Theme"
-    },
-    "currency": {
-      "title": "Currency",
-      "label": "Currency"
-    },
-    "notifications": {
-      "title": "Notifications",
-      "enabled": "{count} of 3 enabled",
-      "budgetAlerts": "Budget Alerts",
-      "budgetAlertsDesc": "Get notified when you exceed your budget",
-      "dailyReminders": "Daily Reminders",
-      "dailyRemindersDesc": "Daily reminder to log expenses",
-      "weeklyReports": "Weekly Reports",
-      "weeklyReportsDesc": "Weekly summary of your spending"
-    },
-    "help": {
-      "title": "Help & Support",
-      "subtitle": "Get help and send feedback"
-    },
-    "stats": {
-      "daysActive": "Days Active",
-      "budgetSuccess": "Budget Success",
-      "categoriesUsed": "Categories Used"
-    }
-  },
-  "expenses": {
-    "title": "All Transactions",
-    "subtitle": "View, edit and manage all your expense transactions",
-    "totalTransactions": "Total Transactions",
-    "thisMonth": "This Month",
-    "addNew": "Add New",
-    "noExpenses": "No expenses found",
-    "searchPlaceholder": "Search transactions..."
-  },
-  "analytics": {
-    "title": "Financial Analytics",
-    "subtitle": "Deep insights into your spending patterns",
-    "overview": "Overview",
-    "trends": "Trends",
-    "categories": "Categories",
-    "insights": "Smart Insights",
-    "loading": "Loading analytics",
-    "noDataTitle": "No Analytics Data Available",
-    "noDataDescription": "Add expenses to unlock powerful AI insights",
-    "startAdding": "Start Adding Expenses",
-    "totalExpenses": "Total Expenses",
-    "transactions": "transactions",
-    "monthlySpending": "Monthly Spending",
-    "currentMonth": "Current month",
-    "averagePerExpense": "Average per Expense",
-    "acrossAllExpenses": "Across all expenses",
-    "healthScore": "Health Score",
-    "aiAssessment": "AI Assessment",
-    "categoryBreakdown": "Category Breakdown",
-    "ofTotal": "of total",
-    "aiAnalysisActive": "AI Analysis Active",
-    "aiFinancialIntelligence": "AI Financial Intelligence",
-    "advancedAnalytics": "Advanced analytics powered by intelligent algorithms",
-    "aiAnalysisRequires": "AI Analysis Requires More Data",
-    "needMoreData": "Add at least 5 expenses to unlock intelligent financial insights and recommendations."
-  },
-  "add": {
-    "title": "Add New Expense",
-    "subtitle": "Track your spending in seconds",
-    "amount": "Amount",
-    "description": "Description",
-    "category": "Category",
-    "date": "Date",
-    "save": "Save Expense",
-    "cancel": "Cancel"
-  },
-  "app": {
-    "name": "FinanceTracker",
-    "version": "Version",
-    "tagline": "Modern application • Made for expense tracking"
-  },
-  "themes": {
-    "lightMode": "☀️ Light Mode",
-    "darkMode": "🌙 Dark Mode",
-    "professionalBlue": "💙 Professional Blue"
-  },
-  "currencies": {
-    "usd": "🇺🇸 US Dollar (USD)",
-    "eur": "🇪🇺 Euro (EUR)",
-    "gbp": "🇬🇧 British Pound (GBP)",
-    "cad": "🇨🇦 Canadian Dollar (CAD)",
-    "aud": "🇦🇺 Australian Dollar (AUD)",
-    "jpy": "🇯🇵 Japanese Yen (JPY)",
-    "mxn": "🇲🇽 Mexican Peso (MXN)",
-    "brl": "🇧🇷 Brazilian Real (BRL)"
-  },
-  "progress": {
-    "title": "Progress Analytics",
-    "subtitle": "Track your spending patterns and budget performance",
-    "thisWeek": "This Week",
-    "weeklyBudget": "weekly budget",
-    "used": "Used",
-    "remainingThisWeek": "remaining this week",
-    "overBudgetThisWeek": "over budget this week",
-    "dailyBreakdown": "Daily Breakdown",
-    "ofDailyLimit": "of daily limit",
-    "totalTransactions": "Total Transactions",
-    "allTime": "All time",
-    "avgTransaction": "Avg Transaction"
-  },
-  "diary": {
-    "title": "Daily Diary",
-    "subtitle": "Track your daily spending progress and budget management",
-    "setupRequired": "Setup Required",
-    "completeSetup": "Please complete your profile setup to use the diary.",
-    "completeSetupButton": "Complete Setup",
-    "monthlySpent": "Monthly Spent",
-    "budgetUsed": "Budget Used",
-    "onTrack": "On track",
-    "overBudget": "Over budget",
-    "daysLogged": "Days Logged",
-    "days": "days",
-    "dailyAverage": "Daily Average",
-    "vs": "vs",
-    "limit": "limit",
-    "underBudget": "Under Budget",
-    "noData": "No Data",
-    "today": "Today",
-    "totalSpent": "Total Spent",
-    "dailyLimit": "Daily Limit",
-    "remaining": "Remaining",
-    "noExpenses": "No Expenses",
-    "noExpensesToday": "No expenses logged today",
-    "noExpensesThisDay": "No expenses logged for this day",
-    "addExpenseToday": "Add expense for today"
-  },
-  "categories": {
-    "title": "Category Management",
-    "subtitle": "Create and customize your expense categories with colors and icons",
-    "management": "Category Management",
-    "createManage": "Create and manage your expense categories",
-    "addCategory": "Add Category",
-    "createNew": "Create New Category",
-    "categoryName": "Category Name",
-    "enterName": "Enter category name...",
-    "color": "Color",
-    "icon": "Icon",
-    "createCategory": "Create Category",
-    "systemCategory": "System Category",
-    "usedInTransactions": "Used in transactions",
-    "clickForDetails": "Click to view detailed analytics",
-    "noCategoriesYet": "No Categories Yet",
-    "createFirst": "Create your first category to organize your expenses",
-    "createFirstCategory": "Create First Category"
-  },
-  "export": {
-    "title": "Export Expenses",
-    "exportFormat": "Export Format",
-    "csv": "CSV",
-    "commaSeparated": "Comma separated",
-    "excel": "Excel",
-    "spreadsheetFormat": "Spreadsheet format",
-    "pdf": "PDF",
-    "printReady": "Print-ready report",
-    "dateRange": "Date Range",
-    "optional": "Optional",
-    "from": "From",
-    "to": "To",
-    "categories": "Categories",
-    "selectAll": "Select All",
-    "clearAll": "Clear All",
-    "exportOptions": "Export Options",
-    "includeStatistics": "Include Statistics",
-    "categoryBreakdown": "Category breakdown, totals, averages",
-    "includeCharts": "Include Charts",
-    "visualCharts": "Visual charts and graphs (PDF/Excel only)",
-    "exportSummary": "Export Summary",
-    "format": "Format",
-    "transactions": "Transactions",
-    "dateRangeSelected": "Date Range",
-    "categoriesSelected": "Categories",
-    "selected": "selected",
-    "exporting": "Exporting...",
-    "exportButton": "Export"
-  },
-  "filters": {
-    "advancedFilters": "Advanced Filters",
-    "searchExpenses": "Search expenses...",
-    "dateRange": "Date Range",
-    "amountRange": "Amount Range",
-    "minAmount": "Min Amount",
-    "maxAmount": "Max Amount",
-    "sortOptions": "Sort Options",
-    "sortBy": "Sort By",
-    "order": "Order",
-    "newestFirst": "Newest First",
-    "oldestFirst": "Oldest First"
+  "admin": {
+    "title": "GlobalGoods Up admin",
+    "subtitle": "Manage users, services, pricing and blog posts from a single view.",
+    "users": "Users",
+    "orders": "Orders",
+    "services": "Services",
+    "pricing": "Plans",
+    "blog": "Blog"
   }
 }

@@ -30,10 +30,28 @@ export const getTranslation = (language: SupportedLanguage) => {
 
 export const detectBrowserLanguage = (): SupportedLanguage => {
   if (typeof window === 'undefined') return DEFAULT_LANGUAGE;
-  
+
   const browserLang = navigator.language.split('-')[0] as SupportedLanguage;
-  
-  return SUPPORTED_LANGUAGES.some(lang => lang.code === browserLang) 
-    ? browserLang 
+
+  return SUPPORTED_LANGUAGES.some(lang => lang.code === browserLang)
+    ? browserLang
     : DEFAULT_LANGUAGE;
+};
+
+export const detectLanguageFromHeader = (acceptLanguageHeader?: string | null): SupportedLanguage => {
+  if (!acceptLanguageHeader) return DEFAULT_LANGUAGE;
+
+  const languages = acceptLanguageHeader
+    .split(',')
+    .map(lang => lang.split(';')[0]?.trim()?.toLowerCase())
+    .filter(Boolean) as SupportedLanguage[];
+
+  for (const lang of languages) {
+    const baseLang = lang.split('-')[0] as SupportedLanguage;
+    if (SUPPORTED_LANGUAGES.some(item => item.code === baseLang)) {
+      return baseLang;
+    }
+  }
+
+  return DEFAULT_LANGUAGE;
 };

@@ -16,11 +16,13 @@ const I18nContext = createContext<I18nContextType | null>(null);
 
 interface I18nProviderProps {
   children: ReactNode;
+  initialLanguage?: SupportedLanguage;
 }
 
-export const I18nProvider: React.FC<I18nProviderProps> = ({ children }) => {
-  const [language, setLanguageState] = useState<SupportedLanguage>(DEFAULT_LANGUAGE);
-  const [translations, setTranslations] = useState<TranslationKeys>(getTranslation(DEFAULT_LANGUAGE));
+export const I18nProvider: React.FC<I18nProviderProps> = ({ children, initialLanguage }) => {
+  const resolvedInitialLanguage = initialLanguage ?? DEFAULT_LANGUAGE;
+  const [language, setLanguageState] = useState<SupportedLanguage>(resolvedInitialLanguage);
+  const [translations, setTranslations] = useState<TranslationKeys>(getTranslation(resolvedInitialLanguage));
   const isHydrated = useHydration();
 
   useEffect(() => {
@@ -28,29 +30,21 @@ export const I18nProvider: React.FC<I18nProviderProps> = ({ children }) => {
     
     // Load saved language or detect browser language only after hydration
     const savedLanguage = localStorage.getItem('selectedLanguage') as SupportedLanguage;
-    const initialLanguage = savedLanguage || detectBrowserLanguage();
-    
-    if (initialLanguage !== DEFAULT_LANGUAGE) {
-      setLanguageState(initialLanguage);
-      setTranslations(getTranslation(initialLanguage));
-    }
-  }, [isHydrated]);
+    const detectedLanguage = savedLanguage || detectBrowserLanguage();
 
-  // Debug logs
-  useEffect(() => {
-    console.log('I18nContext - Current language:', language);
-    console.log('I18nContext - Current translations keys:', Object.keys(translations));
-  }, [language, translations]);
+    if (detectedLanguage && detectedLanguage !== language) {
+      setLanguageState(detectedLanguage);
+      setTranslations(getTranslation(detectedLanguage));
+    }
+  }, [isHydrated, language]);
 
   const setLanguage = (lang: SupportedLanguage) => {
-    console.log('I18nContext - Setting language to:', lang);
     setLanguageState(lang);
     setTranslations(getTranslation(lang));
-    
+
     if (typeof window !== 'undefined') {
       localStorage.setItem('selectedLanguage', lang);
       document.documentElement.lang = lang;
-      console.log('I18nContext - Language saved to localStorage and document updated');
     }
   };
 
