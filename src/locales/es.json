@@ -1,303 +1,177 @@
 {
-  "common": {
-    "save": "Guardar",
-    "cancel": "Cancelar",
-    "edit": "Editar",
-    "delete": "Eliminar",
-    "add": "Añadir",
-    "loading": "Cargando",
-    "error": "Error",
-    "success": "Éxito",
-    "yes": "Sí",
-    "no": "No",
-    "close": "Cerrar",
-    "back": "Atrás",
-    "next": "Siguiente",
-    "search": "Buscar",
-    "filter": "Filtrar",
-    "clear": "Limpiar",
-    "reset": "Reiniciar",
-    "export": "Exportar",
-    "import": "Importar"
+  "app": {
+    "name": "GlobalGoods Up",
+    "shortDescription": "Automatizamos tu web en tiempo récord con IA generativa.",
+    "metaDescription": "GlobalGoods Up diseña automatizaciones, chatbots y experiencias digitales impulsadas por IA generativa para acelerar la productividad de tu empresa.",
+    "cta": "Agendar una demo",
+    "ctaSecondary": "Explorar servicios"
   },
   "navigation": {
     "home": "Inicio",
+    "services": "Servicios",
+    "pricing": "Precios",
+    "about": "Sobre nosotros",
+    "blog": "Blog",
     "dashboard": "Panel",
-    "expenses": "Gastos",
-    "transactions": "Transacciones",
-    "analytics": "Análisis",
-    "progress": "Progreso",
-    "settings": "Configuración",
-    "diary": "Diario",
-    "categories": "Categorías",
-    "addExpense": "Añadir Gasto",
-    "menu": "Menú"
+    "admin": "Admin",
+    "contact": "Contacto",
+    "login": "Iniciar sesión",
+    "getStarted": "Empezar"
+  },
+  "hero": {
+    "title": "Automatizamos tu web en tiempo récord con IA generativa",
+    "subtitle": "Integra automatizaciones, chatbots y analítica inteligente con una plataforma SaaS segura diseñada para operaciones globales.",
+    "primaryCta": "Solicitar demo",
+    "secondaryCta": "Ver planes",
+    "trustedBy": "Equipos en LATAM, EE. UU. y Europa confían en GlobalGoods Up"
+  },
+  "metrics": {
+    "automation": "Procesos automatizados",
+    "roi": "Retorno promedio",
+    "timeSaved": "Horas ahorradas",
+    "satisfaction": "Clientes satisfechos"
+  },
+  "services": {
+    "title": "Servicios impulsados por IA generativa",
+    "subtitle": "Un stack completo para acelerar cada área del negocio.",
+    "items": {
+      "automation": {
+        "title": "Automatizaciones IA",
+        "description": "Diseñamos flujos inteligentes con integraciones 360° para tus aplicaciones empresariales."
+      },
+      "web": {
+        "title": "Creación de webs con IA",
+        "description": "Lanza sitios multilingües optimizados para SEO en días, no meses."
+      },
+      "chatbots": {
+        "title": "Chatbots personalizados",
+        "description": "Atiende clientes 24/7 con agentes que entienden tu catálogo y tono de marca."
+      },
+      "analytics": {
+        "title": "Análisis de datos",
+        "description": "Conecta tus fuentes y obtén tableros accionables generados automáticamente."
+      },
+      "accounting": {
+        "title": "Contabilidad asistida",
+        "description": "Automatiza conciliaciones, reportes y facturación con precisión y auditoría."
+      },
+      "software": {
+        "title": "Software con IA generativa",
+        "description": "Prototipamos y construimos aplicaciones SaaS a medida impulsadas por modelos generativos."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Planes diseñados para escalar",
+    "subtitle": "Facturación mensual o anual. Cancela cuando quieras.",
+    "cta": "Comprar ahora",
+    "plans": {
+      "starter": {
+        "name": "Launch",
+        "price": "$499",
+        "period": "/mes",
+        "description": "Automatizaciones esenciales para validar tu operación.",
+        "features": [
+          "Flujos básicos de automatización",
+          "Sitio landing en 2 idiomas",
+          "Chatbot conectado a base de conocimiento",
+          "Soporte email 8x5"
+        ]
+      },
+      "growth": {
+        "name": "Scale",
+        "price": "$1,499",
+        "period": "/mes",
+        "description": "Optimiza tus operaciones con IA avanzada y analítica.",
+        "features": [
+          "Flujos multi-plataforma ilimitados",
+          "Dashboards de analítica generativa",
+          "Chatbot con agenda en Google Calendar",
+          "Integración con CRM y ERP"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Solicitar",
+        "period": "",
+        "description": "Gobierno corporativo, compliance y personalización total.",
+        "features": [
+          "Equipos dedicados de IA y datos",
+          "Implementaciones multi-cloud",
+          "Soporte 24/7 y SLAs personalizados",
+          "Entrenamiento con datos privados"
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "Impulsamos a empresas globales con IA responsable",
+    "mission": "Nuestra misión es democratizar la automatización inteligente para que organizaciones de cualquier tamaño puedan competir globalmente.",
+    "values": [
+      "Ética y seguridad en cada modelo desplegado",
+      "Implementaciones en semanas, no meses",
+      "Equipos híbridos de negocio, datos y UX"
+    ],
+    "teamTitle": "Equipo fundador",
+    "team": [
+      {
+        "name": "Ana Velasco",
+        "role": "CEO & Estrategia",
+        "bio": "10 años liderando transformación digital y automatización en retail y fintech."
+      },
+      {
+        "name": "Julián Méndez",
+        "role": "CTO & IA Generativa",
+        "bio": "Especialista en despliegue de modelos generativos y arquitecturas serverless."
+      },
+      {
+        "name": "Sofía Ríos",
+        "role": "COO & Datos",
+        "bio": "Ex consultora en analítica avanzada para cadenas logísticas globales."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Ideas generadas con IA",
+    "subtitle": "Cada semana publicamos insights prácticos sobre IA generativa aplicada al negocio.",
+    "cta": "Leer artículo",
+    "empty": "Aún no hay artículos generados. Vuelve pronto."
+  },
+  "contact": {
+    "title": "Hablemos de automatizar tu negocio",
+    "subtitle": "Reserva una consultoría gratuita de 30 minutos con nuestro equipo.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "company": "Empresa",
+      "message": "¿En qué podemos ayudarte?",
+      "submit": "Enviar mensaje",
+      "success": "¡Gracias! Te contactaremos en menos de 24 horas.",
+      "error": "No se pudo enviar el mensaje. Intenta nuevamente."
+    },
+    "chatbot": {
+      "title": "Asistente IA",
+      "description": "Nuestro bot puede coordinar una cita en tu calendario en segundos.",
+      "placeholder": "Pregunta lo que quieras...",
+      "send": "Enviar"
+    }
   },
   "dashboard": {
-    "welcome": "¡Bienvenido de vuelta!",
-    "budgetUsed": "Presupuesto Usado",
-    "dailyBudget": "Presupuesto Diario",
-    "spentToday": "Gastado Hoy",
-    "remaining": "Restante Hoy",
-    "overBudget": "Sobre Presupuesto",
-    "todaysTransactions": "Transacciones de Hoy",
-    "avgTransaction": "Transacción Promedio",
-    "budgetProgress": "Progreso del Presupuesto",
-    "totalToday": "Total Hoy",
-    "addNewExpense": "Añadir Nuevo Gasto",
-    "viewProgress": "Ver Progreso"
+    "title": "Tu panel de GlobalGoods Up",
+    "subtitle": "Revisa tus servicios activos, facturas y conversaciones con nuestro equipo.",
+    "services": "Servicios contratados",
+    "invoices": "Facturas",
+    "messages": "Mensajes",
+    "tickets": "Tickets",
+    "assistant": "Chatbot personalizado"
   },
-  "expenses": {
-    "allTransactions": "Todas las Transacciones",
-    "viewEditManage": "Ver, editar y gestionar todas tus transacciones de gastos",
-    "noExpenses": "No se encontraron gastos",
-    "getStarted": "Comienza añadiendo tu primer gasto.",
-    "adjustFilters": "Intenta ajustar tus filtros para ver más resultados.",
-    "addFirstExpense": "Añadir Tu Primer Gasto",
-    "showing": "Mostrando",
-    "of": "de",
-    "expenses": "gastos",
-    "total": "Total",
-    "exportCSV": "Exportar CSV",
-    "description": "Descripción",
-    "category": "Categoría",
-    "amount": "Cantidad",
-    "date": "Fecha"
-  },
-  "expenseForm": {
-    "addNewExpense": "Añadir Nuevo Gasto",
-    "editExpense": "Editar Gasto",
-    "searchExpenses": "Buscar gastos, categorías...",
-    "commonExpenses": "Gastos Comunes",
-    "suggested": "sugerido",
-    "enterDescription": "Introduce la descripción del gasto...",
-    "selectCategory": "Seleccionar Categoría",
-    "validation": {
-      "dateRequired": "La fecha es obligatoria",
-      "amountRequired": "La cantidad es obligatoria",
-      "amountPositive": "La cantidad debe ser un número positivo",
-      "categoryRequired": "La categoría es obligatoria",
-      "descriptionRequired": "La descripción es obligatoria",
-      "descriptionMinLength": "La descripción debe tener al menos 3 caracteres"
-    }
-  },
-  "analytics": {
-    "title": "Análisis con IA",
-    "subtitle": "Análisis avanzado de gastos con insights inteligentes e inteligencia financiera",
-    "noDataTitle": "No Hay Datos de Análisis Disponibles",
-    "noDataSubtitle": "Añade al menos 5 gastos para desbloquear poderosos insights financieros impulsados por IA.",
-    "startAddingExpenses": "Comenzar a Añadir Gastos",
-    "aiAnalysisActive": "Análisis IA Activo",
-    "aiFinancialIntelligence": "Inteligencia Financiera IA",
-    "advancedAnalytics": "Análisis avanzado impulsado por algoritmos inteligentes",
-    "aiAnalysisRequires": "El Análisis IA Requiere Más Datos",
-    "needMoreData": "Añade al menos 5 gastos para desbloquear insights financieros inteligentes y recomendaciones.",
-    "totalExpenses": "Gastos Totales",
-    "transactions": "transacciones",
-    "monthlySpending": "Gasto Mensual",
-    "currentMonth": "Mes actual",
-    "averagePerExpense": "Promedio por Gasto",
-    "acrossAllExpenses": "En todos los gastos",
-    "healthScore": "Puntuación de Salud",
-    "aiAssessment": "Evaluación IA",
-    "categoryBreakdown": "Desglose por Categorías",
-    "ofTotal": "del total"
-  },
-  "settings": {
-    "title": "Configuración y Más",
-    "subtitle": "Gestiona tu perfil, preferencias y configuración de la app",
-    "currentSettings": "Configuración Actual",
-    "profile": {
-      "title": "Perfil",
-      "setupPrompt": "Configura tu perfil",
-      "name": "Nombre",
-      "dailyBudget": "Presupuesto Diario",
-      "member": "Miembro de FinanceTracker"
-    },
-    "budget": {
-      "title": "Presupuesto Diario",
-      "setupPrompt": "Establece tu presupuesto",
-      "dailyLimit": "Límite de Presupuesto Diario"
-    },
-    "language": {
-      "title": "Idioma y Región",
-      "label": "Idioma"
-    },
-    "theme": {
-      "title": "Tema",
-      "colorTheme": "Tema de Color"
-    },
-    "currency": {
-      "title": "Moneda",
-      "label": "Moneda"
-    },
-    "notifications": {
-      "title": "Notificaciones",
-      "enabled": "{count} de 3 habilitadas",
-      "budgetAlerts": "Alertas de Presupuesto",
-      "budgetAlertsDesc": "Recibir notificaciones cuando excedas tu presupuesto",
-      "dailyReminders": "Recordatorios Diarios",
-      "dailyRemindersDesc": "Recordatorio diario para registrar gastos",
-      "weeklyReports": "Reportes Semanales",
-      "weeklyReportsDesc": "Resumen semanal de tus gastos"
-    },
-    "help": {
-      "title": "Ayuda y Soporte",
-      "subtitle": "Obtener ayuda y enviar comentarios"
-    },
-    "stats": {
-      "daysActive": "Días Activo",
-      "budgetSuccess": "Éxito del Presupuesto",
-      "categoriesUsed": "Categorías Usadas"
-    }
-  },
-  "expenses": {
-    "title": "Todas las Transacciones",
-    "subtitle": "Ve, edita y gestiona todas tus transacciones de gastos",
-    "totalTransactions": "Transacciones Totales",
-    "thisMonth": "Este Mes",
-    "addNew": "Agregar Nuevo",
-    "noExpenses": "No se encontraron gastos",
-    "searchPlaceholder": "Buscar transacciones..."
-  },
-  "analytics": {
-    "title": "Análisis Financieros",
-    "subtitle": "Información profunda sobre tus patrones de gasto",
-    "overview": "Resumen",
-    "trends": "Tendencias",
-    "categories": "Categorías",
-    "insights": "Insights Inteligentes"
-  },
-  "add": {
-    "title": "Agregar Nuevo Gasto",
-    "subtitle": "Registra tus gastos en segundos",
-    "amount": "Cantidad",
-    "description": "Descripción",
-    "category": "Categoría",
-    "date": "Fecha",
-    "save": "Guardar Gasto",
-    "cancel": "Cancelar"
-  },
-  "app": {
-    "name": "FinanceTracker",
-    "version": "Versión",
-    "tagline": "Aplicación moderna • Hecha para seguimiento de gastos"
-  },
-  "themes": {
-    "lightMode": "☀️ Modo Claro",
-    "darkMode": "🌙 Modo Oscuro",
-    "professionalBlue": "💙 Azul Profesional"
-  },
-  "currencies": {
-    "usd": "🇺🇸 Dólar Estadounidense (USD)",
-    "eur": "🇪🇺 Euro (EUR)",
-    "gbp": "🇬🇧 Libra Esterlina (GBP)",
-    "cad": "🇨🇦 Dólar Canadiense (CAD)",
-    "aud": "🇦🇺 Dólar Australiano (AUD)",
-    "jpy": "🇯🇵 Yen Japonés (JPY)",
-    "mxn": "🇲🇽 Peso Mexicano (MXN)",
-    "brl": "🇧🇷 Real Brasileño (BRL)"
-  },
-  "progress": {
-    "title": "Análisis de Progreso",
-    "subtitle": "Rastrea tus patrones de gasto y rendimiento del presupuesto",
-    "thisWeek": "Esta Semana",
-    "weeklyBudget": "presupuesto semanal",
-    "used": "Usado",
-    "remainingThisWeek": "restante esta semana",
-    "overBudgetThisWeek": "sobre presupuesto esta semana",
-    "dailyBreakdown": "Desglose Diario",
-    "ofDailyLimit": "del límite diario",
-    "totalTransactions": "Transacciones Totales",
-    "allTime": "Todos los tiempos",
-    "avgTransaction": "Transacción Promedio"
-  },
-  "diary": {
-    "title": "Diario Diario",
-    "subtitle": "Rastrea tu progreso de gasto diario y gestión del presupuesto",
-    "setupRequired": "Configuración Requerida",
-    "completeSetup": "Por favor completa la configuración de tu perfil para usar el diario.",
-    "completeSetupButton": "Completar Configuración",
-    "monthlySpent": "Gastado Mensual",
-    "budgetUsed": "Presupuesto Usado",
-    "onTrack": "En el buen camino",
-    "overBudget": "Sobre presupuesto",
-    "daysLogged": "Días Registrados",
-    "days": "días",
-    "dailyAverage": "Promedio Diario",
-    "vs": "vs",
-    "limit": "límite",
-    "underBudget": "Bajo Presupuesto",
-    "noData": "Sin Datos",
-    "today": "Hoy",
-    "totalSpent": "Total Gastado",
-    "dailyLimit": "Límite Diario",
-    "remaining": "Restante",
-    "noExpenses": "Sin Gastos",
-    "noExpensesToday": "No se registraron gastos hoy",
-    "noExpensesThisDay": "No se registraron gastos para este día",
-    "addExpenseToday": "Añadir gasto para hoy"
-  },
-  "categories": {
-    "title": "Gestión de Categorías",
-    "subtitle": "Crea y personaliza tus categorías de gastos con colores e iconos",
-    "management": "Gestión de Categorías",
-    "createManage": "Crea y gestiona tus categorías de gastos",
-    "addCategory": "Añadir Categoría",
-    "createNew": "Crear Nueva Categoría",
-    "categoryName": "Nombre de la Categoría",
-    "enterName": "Introduce el nombre de la categoría...",
-    "color": "Color",
-    "icon": "Icono",
-    "createCategory": "Crear Categoría",
-    "systemCategory": "Categoría del Sistema",
-    "usedInTransactions": "Usado en transacciones",
-    "clickForDetails": "Haz clic para ver análisis detallados",
-    "noCategoriesYet": "Aún No Hay Categorías",
-    "createFirst": "Crea tu primera categoría para organizar tus gastos",
-    "createFirstCategory": "Crear Primera Categoría"
-  },
-  "export": {
-    "title": "Exportar Gastos",
-    "exportFormat": "Formato de Exportación",
-    "csv": "CSV",
-    "commaSeparated": "Separado por comas",
-    "excel": "Excel",
-    "spreadsheetFormat": "Formato de hoja de cálculo",
-    "pdf": "PDF",
-    "printReady": "Reporte listo para imprimir",
-    "dateRange": "Rango de Fechas",
-    "optional": "Opcional",
-    "from": "Desde",
-    "to": "Hasta",
-    "categories": "Categorías",
-    "selectAll": "Seleccionar Todo",
-    "clearAll": "Limpiar Todo",
-    "exportOptions": "Opciones de Exportación",
-    "includeStatistics": "Incluir Estadísticas",
-    "categoryBreakdown": "Desglose por categorías, totales, promedios",
-    "includeCharts": "Incluir Gráficos",
-    "visualCharts": "Gráficos visuales y diagramas (solo PDF/Excel)",
-    "exportSummary": "Resumen de Exportación",
-    "format": "Formato",
-    "transactions": "Transacciones",
-    "dateRangeSelected": "Rango de Fechas",
-    "categoriesSelected": "Categorías",
-    "selected": "seleccionadas",
-    "exporting": "Exportando...",
-    "exportButton": "Exportar"
-  },
-  "filters": {
-    "advancedFilters": "Filtros Avanzados",
-    "searchExpenses": "Buscar gastos...",
-    "dateRange": "Rango de Fechas",
-    "amountRange": "Rango de Cantidad",
-    "minAmount": "Cantidad Mínima",
-    "maxAmount": "Cantidad Máxima",
-    "sortOptions": "Opciones de Ordenación",
-    "sortBy": "Ordenar Por",
-    "order": "Orden",
-    "newestFirst": "Más Nuevo Primero",
-    "oldestFirst": "Más Antiguo Primero"
+  "admin": {
+    "title": "Administración GlobalGoods Up",
+    "subtitle": "Gestiona usuarios, servicios, precios y publicaciones del blog en una sola vista.",
+    "users": "Usuarios",
+    "orders": "Pedidos",
+    "services": "Servicios",
+    "pricing": "Planes",
+    "blog": "Blog"
   }
 }
